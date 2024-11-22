@@ -1,0 +1,172 @@
+/* General Reset */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+/* Shared Container Styling */
+.container, .signup-container, .welcome-container {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 30px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Shared Title Styling */
+h1, h2 {
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+/* Index Page Styling */
+.welcome-container h1 {
+    font-size: 28px;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.option-button {
+    text-decoration: none;
+    background: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.option-button:hover {
+    background: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* Signup Page Styling */
+.signup-container h2 {
+    font-size: 22px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+form input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.submit-btn {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background: #0056b3;
+    transform: translateY(-2px);
+}
+
+.login-link {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 14px;
+}
+
+.login-link:hover {
+    text-decoration: underline;
+}
+
+/* Success Page Styling */
+.container p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.container ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 20px;
+}
+
+.container ul li {
+    background: #f8f9fa;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    color: #333;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    background: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .container, .signup-container, .welcome-container {
+        padding: 20px;
+    }
+
+    h1, h2 {
+        font-size: 22px;
+    }
+
+    form input, .option-button, .submit-btn, .btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .container ul li {
+        font-size: 14px;
+        padding: 8px;
+    }
+}

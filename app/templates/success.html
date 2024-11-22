@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Success</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>DigiMedicine</h1>
+        <p>Welcome, you have successfully signed up.</p>
+
+        <h2>List of Users:</h2>
+        <ul>
+            {% for user in users %}
+                <li>{{ user.username }}</li>
+            {% endfor %}
+        </ul>
+
+        <a href="/signup" class="btn">Go to Signup Page</a>
+    </div>
+</body>
+</html>
